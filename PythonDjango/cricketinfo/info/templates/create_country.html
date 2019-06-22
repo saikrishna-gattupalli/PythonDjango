@@ -1,0 +1,9 @@
+{% extends 'home.html'%}
+{% block container %}
+	<h1> country from </h1>h1
+	<form method="post">
+		{% csrf_token%}
+		Name:<input type="text" name="name"></br>
+		Flag:<input type="file" name="flag"></br>
+	</form>
+{% endblock %}
